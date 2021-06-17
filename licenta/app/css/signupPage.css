@@ -1,0 +1,439 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand:400%27';
+  
+  input:not(:placeholder-shown):invalid {
+    border-bottom:5px solid #8b0606;
+  }
+
+  input:focus
+  {
+    border-bottom:5px solid #d08df4;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: #d08df4;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    font-size:1.1em;
+    transition:0.3s all;
+  }
+
+html,
+body
+{
+    min-height:100vh;  /* problema cu marginea de jos a lui bottom div */
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background: #494d5f ;
+
+} 
+
+.upperDiv
+{
+   display:flex;
+   flex-direction:row; 
+   background:#7b46b3;
+   justify-content: center;
+   align-items: center;
+ 
+   width:97%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   margin-top:1.5%;
+
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+   position: relative;  /* ca sa se vada shadowul */
+   z-index: 10;
+
+  
+}
+
+.midDiv
+{
+    display:flex;
+    flex-direction:row;
+    background:#d08df4;
+    justify-content: center;
+    align-items: center;
+    width:97%;
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index:10;
+}
+
+.bottomDiv
+{
+   display:flex;
+   flex-direction:column;
+   background: #73bfe6 ;
+   
+   justify-content:center;
+   align-items: center;
+   flex: 1 1 auto;
+   width: 97%;
+   margin-bottom:1.5%;
+   
+   padding-top:1%;
+   padding-bottom:1%;
+     
+}
+
+.homeHeaderH1
+{
+   font-size:2em;
+   color:white;
+   margin:0px;
+   padding:0px;
+   font-family: Segoe Print; 
+   text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.radioButtonsDiv
+{
+    display:flex;
+    flex-direction:column;
+    /*background:green;*/
+
+    margin-top:4.5%;
+    margin-bottom:4.5%;
+    margin-left:2.5%;
+    
+}
+
+.inputBoxesDiv
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.inputBox
+{
+    font-family: 'Quicksand', sans-serif;
+    width: 90%;
+    border: 0;
+    border-bottom: 5px solid white;
+    outline: 0;
+    font-size: 1.5em;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: 0.2s;
+    margin:2.5%
+}
+
+.labelRadio
+{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 2em;
+
+}
+
+.JoinNowHeader
+{
+    font-family: 'Quicksand', sans-serif;
+    color: #d08df4;
+    font-size: 3em;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.parteaSignupDiv
+{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  background-color:#212121;
+  padding-left: 1%;
+  padding-right: 1%;
+  width:70%;
+    
+    
+}
+
+.signupButton
+  {
+    width: 100%;
+    height:2em;
+    background: #7b46b3;
+    border:5px solid #7b46b3;
+    color: white;
+    font-size:2.5em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif; 
+    transition: all 0.3s ease-out;
+    margin-bottom:2%;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor:pointer;
+
+  }
+
+  .signupButton:hover
+  {
+    width: 100%;
+    background: white;
+    border:5px solid white;
+    color: #7b46b3;
+    font-size:2.5em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif;
+     
+  }
+
+  ::placeholder
+  {
+      color:white;
+      font-size:1.5em;
+      font-family: 'Quicksand', sans-serif;
+      padding:0.5em; 
+      
+  }
+
+  input[type="radio"]
+  {
+    appearance:none;
+    width:1.5em;
+    height:1.5em;  
+    background-color: white;
+    outline:none;
+    border-radius: 0%;
+    transition:all 0.3s;
+    cursor:pointer;
+    
+  }
+
+  input[type="radio"]:checked
+  {
+    appearance:none;
+    width:1.7em;
+    height:1.7em;  
+    background-color: #d08df4;
+    outline:none;
+    border-radius: 0%;
+    cursor:default;
+    
+  }
+/*butoanele de meniu */
+
+
+  .homeButtonToOtherPages {
+    width: 25%;
+   
+    background: none;
+    border:  2px solid white;
+    font-size:3em;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    outline:none;
+    padding:5px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:1.25%;
+    margin-bottom:1.25%;
+    font-family: 'Quicksand', sans-serif; 
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor:pointer;
+  }
+
+  .homeButtonToOtherPages:hover
+  {
+    width: 25%;
+    background: white;
+    border:  2px solid white;
+    font-size: 3em;
+    color: #d08df4;
+    transition: all 0.3s ease-out;
+    outline:none;
+    padding:5px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:1.25%;
+    margin-bottom:1.25%;
+    font-family: 'Quicksand', sans-serif; 
+
+  }
+
+  .homeButtonActive
+  {
+    cursor:default;
+    width: 25%;
+    background: white;
+    border:  2px solid white;
+    font-size: 3em;
+    color: #d08df4;
+    transition: all 0.3s ease-out;
+    outline:none;
+    padding:5px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:1.25%;
+    margin-bottom:1.25%;
+    font-family: 'Quicksand', sans-serif;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+
+  }
+
+ .textEroare
+  {
+    font-size:1em;
+    color:white;
+    font-family: 'Quicksand', sans-serif;
+    margin:0px;
+    padding:0px;
+
+  }
+
+  .swal2-popup {
+    font-size: 2rem !important;
+    width:20em !important;
+    height:5em !important;
+  }
+
+
+
+@media screen and (max-width:800px)
+{
+  .parteaSignupDiv
+      {
+        width:85%;
+        padding-left:3%;
+        padding-right:3%;
+      }
+}
+
+  @media screen and (max-width: 700px)
+  {
+
+    .swal2-popup {
+      font-size: 1.75rem !important;
+      width:15em !important;
+      height:5em !important;
+    }
+
+    .homeButtonToOtherPages
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .homeButtonToOtherPages:hover
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .homeButtonActive
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .JoinNowHeader
+      {
+        font-size:2em;
+        margin-top:1%;
+      }
+      
+  }    
+
+    @media screen and (max-width: 450px)
+    {
+     
+      .swal2-popup {
+        font-size: 1.5rem !important;
+        width:10em !important;
+        height:4.7em !important;
+      }
+
+      .midDiv
+      {
+        display:flex;
+        flex-direction:column;
+        height:fit-content;
+        padding-top:1%;
+        padding-bottom:1%;
+      }
+
+      .homeButtonToOtherPages
+    {
+       margin-right:0;
+       margin-left:0;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+       width:60%;
+    }
+
+    .homeButtonToOtherPages:hover
+    {
+       margin-right:0;
+       margin-left:0;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+       width:60%;
+    }
+
+    .homeButtonActive
+    {
+       margin-right:0%;
+       margin-left:0%;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+       width:60%;
+    }
+
+    .bottomDiv
+    {
+      height:70%;
+    }
+
+    .upperDiv
+    {
+      height:fit-content;
+    }
+
+
+    ::placeholder
+    {
+     font-size:1em;
+     padding:0.5em; 
+      
+    }
+
+    .labelRadio
+    {
+      font-size:1.5em;
+    }
+
+    .signupButton
+  {
+    height:auto;
+    font-size:1.2em;
+  }
+
+    .JoinNowHeader
+  {
+    font-size:1.5em;
+    margin-top:1%;
+  }
+
+    }  
+    
+
+  

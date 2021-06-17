@@ -1,0 +1,547 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand:400%27';
+/*////////////////////////////////////*/
+
+input:not(:placeholder-shown):invalid {
+  border-bottom:5px solid #8b0606;
+}
+
+input:focus
+{
+  border-bottom:5px solid #d08df4;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #d08df4;
+}
+
+input:focus::-webkit-input-placeholder {
+  font-size:1.25em;
+  transition:0.3s all;
+}
+/*///////////////////////////////////////*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+      background-color: transparent;
+  }
+  
+  body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #7b46b3;
+  }
+  
+  /*//////////////////////////////////////*/
+
+
+
+  .bottomDivAccessDenied
+  {
+     display:flex;
+     flex-direction:column;
+     background: #73bfe6 ;
+     
+     align-items: center;
+     justify-content:center;
+     
+  
+     width: 97%;
+  
+     margin-bottom: 1.5%;
+     padding-top:1%;
+     padding-bottom:1%;
+     height:100%;  
+  }
+
+  .htmlBODYAccessDenied
+{
+    
+    width: 100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: #494d5f ;
+
+}
+
+.accessDeniedText
+{
+   font-size:5em;
+   color:white;
+   font-family: 'Quicksand', sans-serif;
+}
+
+
+
+button
+{
+  cursor:pointer;
+}
+
+
+.htmlBODY
+{
+    
+  width: 100%;
+  min-height:100vh;  /* problema cu marginea de jos a lui bottom div */
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background: #494d5f ;
+
+}
+
+
+.descriereConceptAdaugat
+{
+  
+    padding:1em;
+    color:#7b46b3;
+    font-size:1.5em;
+    border:5px solid #7b46b3;
+    outline:none;
+    
+}
+
+.descriereConceptAdaugat:focus
+{  
+    border:5px solid #7b46b3;
+}
+
+.descriereConceptAdaugat:focus::placeholder
+{
+    color:transparent;
+}
+
+textarea
+{
+  color:white;
+}
+  
+fieldset
+{
+    display:flex;
+    flex-direction:column;
+    border: 1px solid gray;
+    border-radius:6px;
+    background-color:#171717;
+}
+
+.fieldname
+{
+  font-family: 'Quicksand', sans-serif; 
+    width: 90%;
+    border: 0;
+    border-bottom: 5px solid white;
+    outline: 0;
+    font-size: 1.5em;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: 0.2s;
+    margin:2%
+}
+
+.parteaConcept
+{
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
+    /*background:red;*/
+    border:1px solid white;
+    background:#212121;
+    padding-left:1%;
+    padding-right:1%;
+    height:fit-content;
+    width:70%;
+    
+}
+
+
+.mce-content-body:not([dir=rtl])[data-mce-placeholder]:not(.mce-visualblocks)::before
+{
+    color:white;
+    font-size:1.25em;
+    font-family: 'Quicksand', sans-serif;
+    padding:0em;
+    padding-left:1%; 
+    
+}
+
+.tox.tox-tinymce-aux {  /* ca sa fie nav bar-ul on top la scroll */
+  z-index: 4;
+
+}
+
+
+
+
+::placeholder
+{
+    color:white;
+    font-size:1.5em;
+    font-family: 'Quicksand', sans-serif;
+    padding:0.5em; 
+    
+}
+
+.labelH
+{
+   font-size:2em;
+   color:white;
+   font-family: 'Quicksand', sans-serif;
+   margin:0px;
+   padding:0px;
+}
+
+.addAFieldButton
+{
+    width: 100%;
+    background: white;
+    border:5px solid white;
+    color: #d08df4;
+    font-size:1.5em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-out;
+    margin-bottom:1.5%;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor:pointer;
+}
+
+.addAFieldButton:hover
+{
+    width: 100%;
+    background: #d08df4;
+    border:5px solid #d08df4;
+    color: white;
+    outline:none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.submitButton
+{
+    width: 100%;
+    height:2em;
+    background: #7b46b3;
+    border:5px solid #7b46b3;
+    color: white;
+    font-size:2.5em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif; 
+    transition: all 0.3s ease-out;
+    margin-bottom:2%;
+    margin-top:2%;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.submitButton:hover
+{
+    width: 100%;
+
+    background: white;
+    border:5px solid white;
+    color: #7b46b3;
+    font-size:2.5em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.removeButton
+{
+    width: 100%;
+    background: white;
+    border:5px solid white;
+    color: #d08df4;
+    font-size:1em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif; 
+    transition: all 0.3s ease-out;
+    margin-bottom:2%;
+    cursor:pointer;
+
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.removeButton:hover
+{
+    width: 100%;
+    background: #d08df4;
+    border:5px solid #d08df4;
+    color: white;
+    font-size:1em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.numeConceptInput
+{
+  font-family: 'Quicksand', sans-serif; 
+    width: 98%;
+    border: 0;
+    border-bottom: 5px solid white;
+    outline: 0;
+    font-size: 1.5em;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: 0.2s;
+    margin:1%;
+    margin-bottom:2%;
+}
+
+.adaugaConceptText
+{
+   font-size:3.5em;
+   color:#d08df4;
+   font-family: 'Quicksand', sans-serif;
+   margin:0px;
+   margin-top:1%;
+   margin-bottom:1%;
+}
+
+.textEroare
+{
+  font-size:2em;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
+  margin-top:0px;
+  margin-bottom:1%;
+  padding:0px;
+
+}
+
+.swal2-popup {
+  font-size: 2rem !important;
+  width:20em !important;
+  height:5em !important;
+}
+
+select {
+  display:inline;
+  width: 100%;
+  height: 50px;
+  font-size: 100%;
+  font-weight: thin;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: gray;
+  border: none;
+  color: #171717;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  margin-bottom:1%;
+  outline:0px;
+  font-family: 'Quicksand', sans-serif;
+  transition: all 0.3s ease-out;
+}
+/* For IE <= 11 */
+select::-ms-expand {
+  display: none; 
+}
+
+select:hover
+{
+
+color:white;
+transition: all 0.3s ease-out;
+background: linear-gradient(#7b46b3, #d08df4);
+background-color:#171717;
+}
+
+
+@media screen and (max-width:800px)
+{
+   .adaugaConceptText
+  {
+    font-size:3.15em;
+  }
+
+  .parteaConcept
+    {
+      width:85%;
+      padding-left:3%;
+      padding-right:3%;
+    }
+
+}
+
+@media screen and (max-width: 700px)
+  {
+
+    .swal2-popup {
+      font-size: 1.75rem !important;
+      width:12em !important;
+      height:3em !important;
+    }
+
+    .homeButtonToOtherPages
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .homeButtonToOtherPages:hover
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .homeButtonActive
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .addAFieldButton
+    {
+       font-size:1em;
+    }
+
+    .addAFieldButton:hover
+    {
+      font-size:1em;
+    }
+
+    .adaugaConceptText
+    {
+        font-size:2.4em;
+    }
+
+    .submitButton
+    {
+        font-size:2em;
+    }
+
+    .numeConceptInput
+    {
+        font-size:1.5em;
+    }
+
+    .labelH
+    {
+      font-size:1.75em;
+    }
+
+    .fieldname
+    {
+        font-size:0.65em;
+    }
+
+    .descriereConceptAdaugat
+    {
+        font-size:1em;
+        height:15em;
+    }
+
+  }    
+
+  @media screen and (max-width: 450px)
+    {
+     
+      .swal2-popup {
+        font-size: 1.5rem !important;
+        width:10em !important;
+        height:2.5em !important;
+      }
+
+      .midDiv
+      {
+        display:flex;
+        flex-direction:column;
+        height:fit-content;
+        padding-top:1%;
+        padding-bottom:1%;
+      }
+
+      .homeButtonToOtherPages
+    {
+       margin-right:0;
+       margin-left:0;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+    }
+
+    .homeButtonToOtherPages:hover
+    {
+       margin-right:0;
+       margin-left:0;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+    }
+
+    .homeButtonActive
+    {
+       margin-right:0%;
+       margin-left:0%;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+    }
+
+
+    .upperDiv
+    {
+      height:fit-content;
+    }
+
+    .adaugaConceptButton
+  {
+    height:auto;
+    font-size:1.2em;
+  }
+
+    .adaugaConceptText
+    {
+       font-size:1.5em;
+    }
+
+
+  .numeConceptInput
+    {
+        font-size:0.7em;
+    }
+
+    .fieldname
+    {
+        font-size:0.5em;
+    }
+
+    .descriereConceptAdaugat
+    {
+        font-size:0.9em;
+        height:15em;
+    }
+
+    .labelH
+    {
+        font-size:1.25em;
+    }
+
+
+} 

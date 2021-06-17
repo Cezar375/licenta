@@ -1,0 +1,646 @@
+
+@import 'https://fonts.googleapis.com/css?family=Quicksand:400%27';
+/*////////////////////////////////////*/
+
+body::-webkit-scrollbar {
+  width: 10px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #7b46b3;
+}
+
+/*//////////////////////////////////////*/
+
+html,
+body
+{
+    width: 100%;
+    min-height:100vh;  /* problema cu marginea de jos a lui bottom div */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background: #494d5f ;
+
+}
+
+ul
+{
+display: block;
+padding-inline-start: 1em;
+}
+
+.formAdaugaConceptButtonSiHeader
+{
+  display:flex;
+  flex-direction:row;
+  align-content:center;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  margin-bottom:1%;
+
+}
+
+.upperDiv
+{
+    display:flex;
+    flex-direction:row; 
+    background:#7b46b3;
+    justify-content: center;
+    align-items: center;
+    width:97%;
+    padding-top:1%;
+    padding-bottom:1%;
+
+    margin-top:1.5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.homeHeaderH1
+{
+   font-size:2em;
+   color:white;
+   margin:0px;
+   padding:0px;
+   font-family: Segoe Print; 
+   text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.midDiv
+{
+    display:flex;
+    flex-direction:row;
+    background:#d08df4;
+    justify-content: center;
+    align-items: center;
+    width:97%;
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    z-index:10;
+}
+
+.bottomDiv
+{
+   display:flex;
+   flex-direction:column;
+   background: #73bfe6 ;
+   
+   align-items: center;
+   flex: 1 1 auto;
+   width: 97%;
+   margin-bottom:1.5%;
+   
+   padding-top:1%;
+   padding-bottom:1%;
+     
+}
+.bottomDivGRAF
+{
+   display:flex;
+   flex-direction:column;
+   background: #73bfe6 ;
+   
+   align-items: center;
+   justify-content:center;
+   flex: 1 1 auto;
+   width: 97%;
+   margin-bottom:1.5%;
+   
+   padding-top:1%;
+   padding-bottom:1%;
+     
+}
+
+.containerGRAF
+{
+  display:flex;
+  flex-direction:column;
+  background: #212121 ;
+  
+  align-items: flex-start;
+  justify-content:center;
+  
+  width: 70%;
+  padding:1%;
+  
+  border:1px solid white;
+  
+}
+
+.parteaMaterii
+{
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content:center;
+    background:#212121;
+    border:1px solid white;
+    padding-left:1%;
+    padding-right:1%;
+    
+    width:70%;
+    
+}
+
+.homeButtonToOtherPages {
+    width: 25%;
+   
+    background: none;
+    border:  2px solid white;
+    font-size:3em;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    outline:none;
+    padding:5px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:1.25%;
+    margin-bottom:1.25%;
+    font-family: 'Quicksand', sans-serif; 
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor:pointer;
+  }
+
+  .homeButtonToOtherPages:hover
+  {
+    width: 25%;
+    background: white;
+    border:  2px solid white;
+    font-size: 3em;
+    color: #d08df4;
+    transition: all 0.3s ease-out;
+    outline:none;
+    padding:5px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:1.25%;
+    margin-bottom:1.25%;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  .homeButtonActive
+  {
+    width: 25%;
+    background: white;
+    border:  2px solid white;
+    font-size: 3em;
+    color: #d08df4;
+    transition: all 0.3s ease-out;
+    outline:none;
+    padding:5px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:1.25%;
+    margin-bottom:1.25%;
+    font-family: 'Quicksand', sans-serif; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor:default;
+
+  }
+
+  .lista
+  {
+    margin-left:0px;
+    margin-right:1%;
+    
+  }
+
+
+  .listaMateriiHeader
+{
+  font-family: 'Quicksand', sans-serif;
+    color: #d08df4;
+    font-size: 3.5em;
+    margin:0px;
+    margin-bottom:1%;
+
+}
+
+.numeMaterie
+{
+  font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom:1%;
+    margin-left:0.5em;
+}
+
+.adaugaConceptButton
+{
+    width:20%;
+    height:2em;
+    background: white;
+    border:5px solid white;
+    color: #d08df4;
+    font-size:2em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-out;
+    margin-left:1%;
+    margin-right:1%;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor:pointer;
+}
+
+.adaugaConceptButton:hover
+{
+    background: #d08df4;
+    border:5px solid #d08df4;
+    color: white;
+}
+
+.grafButton
+{
+    height:2em;
+    width:20%;
+    background: white;
+    border:5px solid white;
+    color: #d08df4;
+    font-size:2em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-out;
+    margin-left:1%;
+    margin-right:1%;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor:pointer;
+}
+
+.grafButton:hover
+{
+    background: #d08df4;
+    border:5px solid #d08df4;
+    color: white;
+}
+.statisticiButton
+{
+    width:fit-content;
+    font-size:3.25em;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    text-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;    
+}
+
+
+.headerSIButon
+{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 0.75%;
+  margin-top: 0.75%;
+
+}
+
+.aflaMateriaButton
+{
+  width:fit-content;
+  background: #7b46b3;
+  border: 5px solid #7b46b3;
+  color: white;
+  font-size: 2em;
+  height:fit-content;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+  transition: all 0.3s ease-out;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  cursor:pointer;
+}
+
+.aflaMateriaButton:hover
+{
+  background: white;
+  border: 5px solid white;
+  color: #7b46b3;
+}
+
+ul {
+    
+    list-style:none;
+    margin:0px;
+    list-style-position:inside;
+    color:#7b46b3;
+    
+  }
+  
+ul li:hover
+{
+    /*color: #494d5f;*/
+    cursor:pointer;
+    background-image:linear-gradient(to bottom right,  gray, white);
+    color:#171717;
+    transition:all 0.3s ease-in-out;
+    
+}
+
+
+  ul li::before {
+    content: "🌑"; 
+    font-family: 'Quicksand', sans-serif;
+    /*color: #8458B3;*/
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -0.75em;
+    margin-right:0.5em;
+    
+    
+  }
+
+  li
+  {
+    /*border:1px solid #494d5f;
+    background-color:#8458B3;*/
+    background:linear-gradient(#7b46b3, #d08df4);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius:10px;
+  }
+
+  #vis 
+  {
+    height:60vh;
+    width:100%;
+    border: 1px solid gray;
+    border-radius:5px;
+    background-color:#171717;
+  }
+
+
+  @media screen and (max-width: 1600px)
+  {
+    .adaugaConceptButton
+    {
+      height:3.2em;
+    }
+
+    .grafButton
+    {
+      height:3.2em;
+    }
+
+    .statisticiButton
+    {
+      font-size:5.5em;
+    }
+  }
+
+
+  @media screen and (max-width: 970px)
+  {
+    .adaugaConceptButton
+    {
+      font-size:1.5em;
+      width:40%;
+    }
+
+    .grafButton
+    {
+      font-size:1.5em;
+    }
+
+    .aflaMateriaButton
+    {
+      font-size:1.5em;
+    }
+
+    .statisticiButton
+    {
+      font-size:4em;
+    }
+
+  }
+
+  @media screen and (max-width: 750px)
+  {
+
+  
+    .homeButtonToOtherPages
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .homeButtonToOtherPages:hover
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .homeButtonActive
+    {
+       margin-right:1.5%;
+       margin-left:1.5%;
+       font-size:2em;
+    }
+
+    .listaMateriiHeader
+    {
+        font-size:2em;
+    }
+
+    .adaugaConceptButton
+    {  
+        font-size:1em;
+        width:25%;
+    }
+      
+    .grafButton
+    {  
+        font-size:1em;
+        width:25%;
+    }
+
+    .aflaMateriaButton
+    {
+      font-size:1em;
+    }
+
+   .numeMaterie
+   {
+       font-size:1.5em;
+   }
+
+   .statisticiButton
+    {
+      font-size:2.75em;
+    }
+
+
+  }    
+
+  @media screen and (max-width:800px)
+  {
+    .parteaMaterii
+    {
+      width:85%;
+      padding-left:3%;
+      padding-right:3%;
+    }
+
+    .containerGRAF
+    {
+      width:85%;
+      padding-left:3%;
+      padding-right:3%;
+    }
+  }
+
+
+  @media screen and (max-width: 480px)
+    {
+      .headerSIButon
+      {
+        flex-direction:column;
+        margin-bottom:5%;
+      }
+      .formAdaugaConceptButtonSiHeader
+     {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+     }
+     
+      ul li::before {
+        
+        margin-left: -0.75em;
+        
+      }
+
+      .midDiv
+      {
+        display:flex;
+        flex-direction:column;
+        height:fit-content;
+        padding-top:1%;
+        padding-bottom:1%;
+      }
+
+      .homeButtonToOtherPages
+    {
+       margin-right:0;
+       margin-left:0;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+       width:60%;
+    }
+
+    .homeButtonToOtherPages:hover
+    {
+       margin-right:0;
+       margin-left:0;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+       width:60%;
+    }
+
+    .homeButtonActive
+    {
+       margin-right:0%;
+       margin-left:0%;
+       margin-bottom:1%;
+       margin-top:1%;
+       font-size:1.1em;
+       width:60%;
+    }
+
+    .bottomDiv
+    {
+      height:70%;
+    }
+
+    .upperDiv
+    {
+      height:fit-content;
+    }
+
+    .adaugaConceptButton
+  {
+    height:auto;
+    width:80%;
+    font-size:1.2em;
+    margin-top:1%;
+  }
+
+  .grafButton
+  {
+    height:auto;
+    width:80%;
+    font-size:1.2em;
+  }
+
+  .aflaMateriaButton
+  {
+    font-size:1.2em;
+  }
+
+
+
+    .numeMaterie
+  {
+    font-size:0.9em;
+    padding-top:2%;
+    padding-bottom:2%;
+
+    margin-left:-0.5em;
+ 
+  }
+
+  .statisticiButton
+  {
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+    font-size:1.2em;
+    height: auto;
+    width:80%;
+    background: white;
+    border: 5px solid white;
+    color: #d08df4;
+    font-family: 'Quicksand', sans-serif;
+    margin-top:1%;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+  
+  .statisticiButton:hover
+  {
+    background: #d08df4;
+    border: 5px solid #d08df4;
+    color: white;
+  }
+
+  .statisticiButton::after
+  {
+    content: "Statistici";
+    text-indent: 0;
+    display: block;
+    line-height: initial; /* New content takes up original line height */
+  }
+
+}  
+    

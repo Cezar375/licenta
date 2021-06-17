@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand:400%27';
+
+.canvasStats
+{
+    margin:1em;
+    background-color:#171717;
+    border-radius:5px;
+    padding:10px;
+    border:1px solid  gray;
+    max-height:30rem;
+    
+}
+
+
+.statisticiHeaderContainer
+{
+    margin-top:0.75%;
+    margin-bottom:0.75%;
+}
+
+@media screen and (max-width: 450px)
+{
+    .canvasStats
+    {
+      max-height:20rem;
+    }
+}

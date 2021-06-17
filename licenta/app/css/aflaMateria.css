@@ -1,0 +1,202 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand:400%27';
+
+.dottedDiv
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background: #212121;
+    border: 1px solid white;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: fit-content;
+    width: 70%;
+}
+
+.aflaMateriaHeader
+{
+  font-family: 'Quicksand', sans-serif;
+  color: #d08df4;
+  font-size: 3.5em;
+  margin: 0px;
+  margin-bottom: 1%;
+  margin-top:1%;
+}
+
+.materieGasitaHeader
+{
+  font-family: 'Quicksand', sans-serif;
+    color: #7b46b3;
+    font-size: 3.5em;
+    margin: 0px;
+    margin-bottom: 1%;
+}
+
+.submitButton
+{
+    width: 100%;
+    height: 1.75em;
+    background: #7b46b3;
+    border: 5px solid #7b46b3;
+    color: white;
+    font-size: 2.5em;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-out;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.submitButton:hover
+{
+    background: white;
+    border:5px solid white;
+    color: #7b46b3;
+}
+
+.materieGasita
+{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background: #212121;
+  border: 1px solid #d08df4;
+  padding:1%;
+  margin-top: 1%;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+select {
+    display:inline;
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    font-weight: thin;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: gray;
+    border: none;
+    color: #171717;
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    margin-bottom:1%;
+    outline:0px;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-out;
+  }
+  /* For IE <= 11 */
+  select::-ms-expand {
+    display: none; 
+  }
+
+  select:hover
+ {
+ 
+  color:white;
+  transition: all 0.3s ease-out;
+  background: linear-gradient(#7b46b3, #d08df4);
+  background-color:#171717;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width:880px)
+  {
+    .aflaMateriaHeader
+    {
+      font-size:3em;
+    }
+
+    .materieGasitaHeader
+    {
+        font-size:3em;
+    }
+  }
+
+  @media screen and (max-width:800px)
+  {
+
+    .aflaMateriaHeader
+    {
+      font-size:2.75em;
+    }
+
+    .materieGasitaHeader
+     {
+        font-size:2.75em;
+     }
+
+
+     select
+     {
+        margin-top:2%;
+     }
+
+
+    .dottedDiv
+    {
+      width: 85%;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+    .materieGasita 
+    {
+        width: 85%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    
+  }  
+
+  @media screen and (max-width:600px)
+  {
+    .aflaMateriaHeader
+    {
+      font-size:2.2em;
+    }
+
+    .materieGasitaHeader
+     {
+        font-size:2.2em;
+     }
+
+
+  }
+
+  @media screen and (max-width:450px)
+  {
+
+    .aflaMateriaHeader
+    {
+      font-size:1.55em;
+    }
+
+    .materieGasitaHeader
+     {
+        font-size:1.55em;
+     }
+
+    select
+    {
+       margin-top:3%;
+    }
+
+    .submitButton
+    {
+        font-size:2em;
+    }
+   
+
+}  

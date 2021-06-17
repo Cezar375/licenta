@@ -1,0 +1,186 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand:400%27';
+
+.numeleConceptuluiPagComentarii
+{
+  font-family: 'Quicksand', sans-serif;
+  color: #d08df4;
+  font-size: 3.5em;
+  margin: 0;
+  margin-bottom:2%;
+
+}
+
+
+.posteazaComentariu
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.comentariiConceptButton
+  {
+    width: 90%;
+    background: #7b46b3;
+    border:5px solid #7b46b3;
+    color: white;
+    font-size:1.4em;
+    outline:none;
+    font-family: 'Quicksand', sans-serif; 
+    transition: all 0.3s ease-out;
+    margin-bottom:2%;
+    margin-top:1%;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  }
+
+  .comentariiConceptButton:hover
+  {
+    background: white;
+    border:5px solid white;
+    color: #7b46b3;
+  }
+
+
+  .commentContentDIV
+  {
+     white-space:pre-line;
+  }
+
+  .commentBox {
+	background-color: #7b46b3;
+	position: relative;
+	padding: 10px;
+	color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom:2.75em;
+  display:flex;/*   2 div-uri, unul cu autor si content in stanga, unul cu data in dreapta sus */
+  flex-direction:row;
+  justify-content:space-between;
+  font-family: 'Quicksand', sans-serif; 
+  border-radius:2px;
+  /*border:1px dashed #494d5f;*/
+  
+
+    
+}
+
+
+.commentBox::after {
+	content: "";
+	position: absolute;
+	height: 2.5em;
+	width: 2.75em;
+	bottom: -2.25em;
+	left: 85%;
+	background-color: #7b46b3;
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+  /*z-index:-1;*/
+  /*border:1px dashed #494d5f;*/
+}
+
+.commentBoxContainer
+{
+  position:relative;
+  /*z-index:1;*/
+}
+
+.nameANDcommentContentDIV
+{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-content:space-between;
+  overflow-x:auto;
+  overflow-y: hidden;
+}
+
+
+.timeDIV
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    font-size:0.9em;
+    color:rgb(224, 222, 222);
+    font-family: 'Quicksand', sans-serif; 
+}
+
+.authorDIV
+{
+  color:rgb(224, 222, 222);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.removeCommentButton
+{
+    outline:0px;
+    border:0px;
+    color:white;
+    background-color:transparent;
+    font-size:2em;
+}
+
+.swal2-popup {
+    font-size: 2rem !important;
+    width:20em !important;
+    height:5em !important;
+  }
+   
+
+  @media screen and (max-width: 700px)
+  {
+
+    .swal2-popup {
+      font-size: 1.75rem !important;
+      width:12em !important;
+      height:3em !important;
+    }
+
+    .numeleConceptuluiPagComentarii
+    {
+      font-size:2.5em;
+    }
+
+    .timeDIV
+    {
+      font-size:0.75em;
+    }
+
+}
+
+
+@media screen and (max-width: 450px)
+{
+ 
+  .swal2-popup {
+    font-size: 1.5rem !important;
+    width:10em !important;
+    height:2.5em !important;
+  }
+
+
+  .commentBox::after {
+
+     left:80%;
+
+  }
+
+  .numeleConceptuluiPagComentarii
+    {
+      font-size:2.25em;
+    }
+
+} 
+
+@media screen and (max-width: 340px)
+{
+  .commentBox::after {
+
+    left:70%;
+
+ }
+}
+
